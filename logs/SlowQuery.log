@@ -7,3 +7,36 @@
 
 2022/06/17 22:21:33 D:/goProject/pkg/mod/github.com/zenfire-cn/commkit@v0.0.5/database/DB.go:58
 [error] failed to initialize database, got error Error 1049: Unknown database 'word'
+
+2022/06/17 23:45:28 D:/goProject/careful/model/folder.go:16 SLOW SQL >= 10ms
+[82.925ms] [rows:1] INSERT INTO `folders` (`name`,`created_at`,`updated_at`) VALUES ('test','2022-06-17 23:45:28.222','2022-06-17 23:45:28.222')
+
+2022/06/17 23:47:37 D:/goProject/pkg/mod/gorm.io/driver/mysql@v1.0.3/mysql.go:52
+[info] replacing callback `gorm:update` from D:/goProject/pkg/mod/gorm.io/driver/mysql@v1.0.3/mysql.go:52
+
+2022/06/17 23:47:37 D:/goProject/careful/model/db.go:25
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/06/17 23:47:37 D:/goProject/careful/model/db.go:25
+[3.001ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'world' AND table_name = 'servers' AND table_type = 'BASE TABLE'
+
+2022/06/17 23:47:37 D:/goProject/pkg/mod/gorm.io/driver/mysql@v1.0.3/migrator.go:195
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/06/17 23:47:37 D:/goProject/pkg/mod/gorm.io/driver/mysql@v1.0.3/migrator.go:200
+[2.000ms] [rows:-] SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale, datetime_precision FROM information_schema.columns WHERE table_schema = 'world' AND table_name = 'servers'
+
+2022/06/17 23:47:37 D:/goProject/careful/model/db.go:28
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/06/17 23:47:37 D:/goProject/careful/model/db.go:28
+[2.000ms] [rows:-] SELECT count(*) FROM information_schema.tables WHERE table_schema = 'world' AND table_name = 'folders' AND table_type = 'BASE TABLE'
+
+2022/06/17 23:47:37 D:/goProject/pkg/mod/gorm.io/driver/mysql@v1.0.3/migrator.go:195
+[0.000ms] [rows:-] SELECT DATABASE()
+
+2022/06/17 23:47:37 D:/goProject/pkg/mod/gorm.io/driver/mysql@v1.0.3/migrator.go:200
+[1.000ms] [rows:-] SELECT column_name, is_nullable, data_type, character_maximum_length, numeric_precision, numeric_scale, datetime_precision FROM information_schema.columns WHERE table_schema = 'world' AND table_name = 'folders'
+
+2022/06/17 23:47:41 D:/goProject/careful/model/folder.go:16
+[72.130ms] [rows:1] INSERT INTO `folders` (`name`,`created_at`,`updated_at`) VALUES ('test','2022-06-17 23:47:41.434','2022-06-17 23:47:41.434')
