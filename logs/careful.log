@@ -1,0 +1,26 @@
+2022-06-17 22:13:03	INFO	careful/main.go:28	server running on port: 9876
+2022-06-17 22:20:25	FATAL	model/db.go:22	Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+2022-06-17 22:20:40	FATAL	model/db.go:22	Error 1049: Unknown database 'test'
+2022-06-17 22:21:33	FATAL	model/db.go:22	Error 1049: Unknown database 'word'
+2022-06-17 22:21:44	INFO	careful/main.go:31	server running on port: 9876
+2022-06-17 22:34:43	INFO	careful/main.go:31	server running on port: 9876
+2022-06-17 22:36:21	INFO	web/log.go:35	/api/server/upload	{"S": 200, "M": "POST", "T": "38.1056ms", "Q": "", "IP": "::1"}
+2022-06-17 22:37:08	INFO	careful/main.go:31	server running on port: 9876
+2022-06-17 22:37:50	INFO	careful/main.go:31	server running on port: 9876
+2022-06-17 22:37:53	ERROR	controller/server.go:29	open static/4月考勤.zip: The system cannot find the path specified.
+2022-06-17 22:37:53	INFO	web/log.go:35	/api/server/upload	{"S": 200, "M": "POST", "T": "53.4292ms", "Q": "", "IP": "::1"}
+2022-06-17 22:42:40	INFO	careful/main.go:31	server running on port: 9876
+2022-06-17 22:42:45	INFO	web/log.go:35	/api/server/upload	{"S": 200, "M": "POST", "T": "42.136ms", "Q": "", "IP": "::1"}
+2022-06-17 22:45:26	INFO	careful/main.go:31	server running on port: 9876
+2022-06-17 22:45:33	INFO	web/log.go:35	/api/server/upload	{"S": 200, "M": "POST", "T": "182.3571ms", "Q": "", "IP": "::1"}
+2022-06-17 22:49:37	INFO	careful/main.go:31	server running on port: 9876
+2022-06-17 22:49:53	INFO	web/log.go:35	/api/server/upload	{"S": 200, "M": "POST", "T": "180.2498ms", "Q": "", "IP": "::1"}
+2022-06-17 22:51:46	INFO	web/log.go:35	/api/server/upload	{"S": 200, "M": "POST", "T": "4.6474ms", "Q": "", "IP": "::1"}
+2022-06-17 22:53:45	ERROR	rest/restRes.go:31	http: no such file
+2022-06-17 22:53:45	INFO	web/log.go:35	/api/server/upload	{"S": 200, "M": "POST", "T": "115.2µs", "Q": "", "IP": "::1"}
+2022-06-17 22:56:20	INFO	careful/main.go:31	server running on port: 9876
+2022-06-17 22:56:23	ERROR	rest/restRes.go:31	http: no such file
+2022-06-17 22:56:23	INFO	web/log.go:35	/api/server/upload	{"S": 200, "M": "POST", "T": "506.8µs", "Q": "", "IP": "::1"}
+2022-06-17 22:59:41	INFO	careful/main.go:31	server running on port: 9876
+2022-06-17 22:59:46	ERROR	rest/restRes.go:31	path 参数为空
+2022-06-17 22:59:46	INFO	web/log.go:35	/api/server/upload	{"S": 200, "M": "POST", "T": "555.7µs", "Q": "", "IP": "::1"}

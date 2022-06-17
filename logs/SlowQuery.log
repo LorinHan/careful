@@ -1,0 +1,9 @@
+
+2022/06/17 22:20:25 D:/goProject/pkg/mod/github.com/zenfire-cn/commkit@v0.0.5/database/DB.go:58
+[error] failed to initialize database, got error Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+
+2022/06/17 22:20:40 D:/goProject/pkg/mod/github.com/zenfire-cn/commkit@v0.0.5/database/DB.go:58
+[error] failed to initialize database, got error Error 1049: Unknown database 'test'
+
+2022/06/17 22:21:33 D:/goProject/pkg/mod/github.com/zenfire-cn/commkit@v0.0.5/database/DB.go:58
+[error] failed to initialize database, got error Error 1049: Unknown database 'word'
