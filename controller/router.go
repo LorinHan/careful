@@ -39,6 +39,7 @@ func InitRouter(r *gin.Engine) {
 			docker.DELETE("", Docker.Delete)
 			docker.GET("logs", Docker.Logs)
 			docker.GET("info", Docker.Info)
+			docker.POST("run", Docker.Run)
 		}
 	}
 }

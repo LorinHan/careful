@@ -115,3 +115,14 @@ func (d *DockerLogsReq) Check() error {
 	}
 	return d.DockerNameReq.Check()
 }
+
+type DockerRunReq struct {
+	Path string `json:"path"`
+}
+
+func (d *DockerRunReq) Check() error {
+	if d.Path == "" {
+		return errors.New("参数 path 为空")
+	}
+	return nil
+}

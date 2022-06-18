@@ -7,9 +7,13 @@ import (
 	"github.com/docker/docker/api/types/filters"
 	"github.com/docker/docker/client"
 	"github.com/gin-gonic/gin"
+	"github.com/pkg/errors"
+	"github.com/zenfire-cn/commkit/utility"
 	"github.com/zenfire-cn/webkit/rest"
 	"go.uber.org/zap"
 	"io/ioutil"
+	"os/exec"
+	"runtime"
 	"time"
 )
 
@@ -57,7 +61,7 @@ func (d *docker) List(ctx *gin.Context) {
 		return
 	}
 
-	resp = make([]params.DockerListResp, len(req.Name))
+	resp = make([]params.DockerListResp, len(containers))
 	for i, container := range containers {
 		name := container.Names[0]
 		if name[:1] == "/" {
@@ -328,9 +332,44 @@ func (d *docker) Info(ctx *gin.Context) {
 	}
 
 	if len(containers) < 1 {
-		rest.Error(ctx, "该容器不存在")
+		rest.Success(ctx, nil)
 		return
 	}
 
 	rest.Success(ctx, containers[0])
+}
+
+func (d *docker) Run(ctx *gin.Context) {
+	var (
+		req params.DockerRunReq
+	)
+
+	if err := ctx.Bind(&req); err != nil {
+		rest.Error(ctx, err.Error())
+		return
+	}
+
+	if err := req.Check(); err != nil {
+		rest.Error(ctx, err.Error())
+		return
+	}
+
+	if runtime.GOOS != "windows" && !utility.PathFileExists(req.Path) {
+		rest.Error(ctx, "执行脚本不存在")
+		return
+	}
+
+	var (
+		cmd = exec.Command("sh", "-c", req.Path)
+	)
+	if runtime.GOOS == "windows" {
+		cmd = exec.Command("cmd", "/c", req.Path)
+	}
+
+	buf, err := cmd.CombinedOutput()
+	if err != nil {
+		rest.Success(ctx, errors.WithMessage(err, string(buf)).Error())
+		return
+	}
+	rest.Success(ctx, string(buf))
 }

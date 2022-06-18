@@ -149,3 +149,160 @@
 2022-06-18 16:42:06	ERROR	rest/restRes.go:34	参数 name 为空	{"caller": "D:/goProject/careful/controller/docker.go:305"}
 2022-06-18 16:42:06	INFO	web/log.go:35	/api/docker/info	{"S": 200, "M": "GET", "T": "0s", "Q": "name=", "IP": "::1"}
 2022-06-18 16:42:07	INFO	web/log.go:35	/api/docker/info	{"S": 200, "M": "GET", "T": "16.2106ms", "Q": "name=test", "IP": "::1"}
+2022-06-18 20:48:07	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 20:48:42	ERROR	rest/restRes.go:34	参数 path 为空	{"caller": "D:/goProject/careful/controller/docker.go:351"}
+2022-06-18 20:48:42	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "5.5938ms", "Q": "", "IP": "::1"}
+2022-06-18 20:50:19	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 20:50:21	ERROR	rest/restRes.go:34	执行脚本不存在	{"caller": "D:/goProject/careful/controller/docker.go:357"}
+2022-06-18 20:50:21	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "1.4637ms", "Q": "", "IP": "::1"}
+2022-06-18 20:50:37	ERROR	rest/restRes.go:34	invalid character 'g' in string escape code	{"caller": "D:/goProject/careful/controller/docker.go:347"}
+2022-06-18 20:50:37	ERROR	web/log.go:32	invalid character 'g' in string escape code
+2022-06-18 20:51:32	ERROR	rest/restRes.go:34	exec: "sh": executable file not found in %PATH%	{"caller": "D:/goProject/careful/controller/docker.go:367"}
+2022-06-18 20:51:32	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "14.8307ms", "Q": "", "IP": "::1"}
+2022-06-18 20:53:13	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 20:53:16	ERROR	rest/restRes.go:34	exec: "cmd -c": executable file not found in %PATH%	{"caller": "D:/goProject/careful/controller/docker.go:374"}
+2022-06-18 20:53:16	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "14.9479ms", "Q": "", "IP": "::1"}
+2022-06-18 20:53:30	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 20:53:32	ERROR	rest/restRes.go:34	exec: "cmd /c": file does not exist	{"caller": "D:/goProject/careful/controller/docker.go:374"}
+2022-06-18 20:53:32	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "1.1902ms", "Q": "", "IP": "::1"}
+2022-06-18 20:53:44	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 20:53:46	ERROR	rest/restRes.go:34	exec: "cmd.exe -c": executable file not found in %PATH%	{"caller": "D:/goProject/careful/controller/docker.go:374"}
+2022-06-18 20:53:46	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "22.5053ms", "Q": "", "IP": "::1"}
+2022-06-18 20:54:07	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:02:35	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:02:49	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:03:09	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "16.8318881s", "Q": "", "IP": "::1"}
+2022-06-18 21:03:44	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "1.267166s", "Q": "", "IP": "::1"}
+2022-06-18 21:04:09	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:04:11	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "56.9129ms", "Q": "", "IP": "::1"}
+2022-06-18 21:06:23	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:06:28	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "1.0607s", "Q": "", "IP": "::1"}
+2022-06-18 21:08:09	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:08:12	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "1.178512s", "Q": "", "IP": "::1"}
+2022-06-18 21:09:34	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:09:37	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "1.1726525s", "Q": "", "IP": "::1"}
+2022-06-18 21:11:27	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:11:31	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "1.1377845s", "Q": "", "IP": "::1"}
+2022-06-18 21:14:05	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:14:09	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "1.1813126s", "Q": "", "IP": "::1"}
+2022-06-18 21:14:39	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "1.1352281s", "Q": "", "IP": "::1"}
+2022-06-18 21:14:56	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:15:03	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "1.1962277s", "Q": "", "IP": "::1"}
+2022-06-18 21:17:04	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:17:07	ERROR	rest/restRes.go:34	exit status 127	{"caller": "D:/goProject/careful/controller/docker.go:371"}
+2022-06-18 21:17:07	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "1.049301s", "Q": "", "IP": "::1"}
+2022-06-18 21:17:40	ERROR	rest/restRes.go:34	执行脚本不存在	{"caller": "D:/goProject/careful/controller/docker.go:358"}
+2022-06-18 21:17:40	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "320.9µs", "Q": "", "IP": "::1"}
+2022-06-18 21:18:21	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:18:24	ERROR	rest/restRes.go:34	执行脚本不存在	{"caller": "D:/goProject/careful/controller/docker.go:358"}
+2022-06-18 21:18:24	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "1.4079ms", "Q": "", "IP": "::1"}
+2022-06-18 21:18:28	ERROR	rest/restRes.go:34	exec: "": executable file not found in %PATH%	{"caller": "D:/goProject/careful/controller/docker.go:371"}
+2022-06-18 21:18:28	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "36.7818ms", "Q": "", "IP": "::1"}
+2022-06-18 21:18:40	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:18:42	ERROR	rest/restRes.go:34	fork/exec D:\goProject\careful\static\test.sh: %1 is not a valid Win32 application.	{"caller": "D:/goProject/careful/controller/docker.go:371"}
+2022-06-18 21:18:42	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "14.5449ms", "Q": "", "IP": "::1"}
+2022-06-18 21:19:31	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:19:33	ERROR	rest/restRes.go:34	exit status 127	{"caller": "D:/goProject/careful/controller/docker.go:371"}
+2022-06-18 21:19:33	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "270.9443ms", "Q": "", "IP": "::1"}
+2022-06-18 21:19:41	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "173.7328ms", "Q": "", "IP": "::1"}
+2022-06-18 21:22:21	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:22:32	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:22:39	ERROR	rest/restRes.go:34	exit status 1	{"caller": "D:/goProject/careful/controller/docker.go:370"}
+2022-06-18 21:22:39	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "255.907ms", "Q": "", "IP": "::1"}
+2022-06-18 21:26:35	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:26:40	ERROR	rest/restRes.go:34	exec: Stdout already set	{"caller": "D:/goProject/careful/controller/docker.go:372"}
+2022-06-18 21:26:40	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "18.976ms", "Q": "", "IP": "::1"}
+2022-06-18 21:30:20	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:30:24	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "1.1619022s", "Q": "", "IP": "::1"}
+2022-06-18 21:31:16	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "1.1509915s", "Q": "", "IP": "::1"}
+2022-06-18 21:35:13	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:35:16	ERROR	rest/restRes.go:34	exec: "git-cmd": executable file not found in %PATH%	{"caller": "D:/goProject/careful/controller/docker.go:370"}
+2022-06-18 21:35:16	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "24.4556ms", "Q": "", "IP": "::1"}
+2022-06-18 21:36:19	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:36:21	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "68.2178ms", "Q": "", "IP": "::1"}
+2022-06-18 21:37:16	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "70.8568ms", "Q": "", "IP": "::1"}
+2022-06-18 21:37:28	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:37:31	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "86.4938ms", "Q": "", "IP": "::1"}
+2022-06-18 21:45:22	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:45:26	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "458.8514ms", "Q": "", "IP": "::1"}
+2022-06-18 21:45:46	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 21:45:47	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "85.6769ms", "Q": "", "IP": "::1"}
+2022-06-18 22:00:01	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:00:14	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:00:17	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "47.8314ms", "Q": "", "IP": "::1"}
+2022-06-18 22:00:26	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "47.874ms", "Q": "", "IP": "::1"}
+2022-06-18 22:00:53	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:00:55	ERROR	rest/restRes.go:34	exit status 125	{"caller": "D:/goProject/careful/controller/docker.go:370"}
+2022-06-18 22:00:55	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "348.0639ms", "Q": "", "IP": "::1"}
+2022-06-18 22:01:15	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:01:17	ERROR	rest/restRes.go:34	exit status 125	{"caller": "D:/goProject/careful/controller/docker.go:372"}
+2022-06-18 22:01:17	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "441.744ms", "Q": "", "IP": "::1"}
+2022-06-18 22:01:30	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:01:32	ERROR	rest/restRes.go:34	exit status 125	{"caller": "D:/goProject/careful/controller/docker.go:372"}
+2022-06-18 22:01:32	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "356.1352ms", "Q": "", "IP": "::1"}
+2022-06-18 22:03:19	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:03:21	ERROR	rest/restRes.go:34	exit status 125	{"caller": "D:/goProject/careful/controller/docker.go:372"}
+2022-06-18 22:03:21	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "344.8949ms", "Q": "", "IP": "::1"}
+2022-06-18 22:03:58	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:04:02	ERROR	rest/restRes.go:34	exit status 125
+D:\goProject\careful>docker run -d --name=test redis 
+docker: Error response from daemon: Conflict. The container name "/test" is already in use by container "d461264d6cc6bbdda99ee6ef7a08a2e577edd787040e42c445f5e52414275f69". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+	{"caller": "D:/goProject/careful/controller/docker.go:370"}
+2022-06-18 22:04:02	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "346.2983ms", "Q": "", "IP": "::1"}
+2022-06-18 22:05:11	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:05:18	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:05:22	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "358.0879ms", "Q": "", "IP": "::1"}
+2022-06-18 22:08:02	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:08:05	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "363.3413ms", "Q": "", "IP": "::1"}
+2022-06-18 22:08:20	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:08:23	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "347.9795ms", "Q": "", "IP": "::1"}
+2022-06-18 22:08:52	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:08:54	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "333.0847ms", "Q": "", "IP": "::1"}
+2022-06-18 22:09:07	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:09:11	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "348.9448ms", "Q": "", "IP": "::1"}
+2022-06-18 22:09:55	ERROR	web/log.go:73	/api/docker/run	 runtime error: invalid memory address or nil pointer dereference
+careful/controller.(*docker).Run(0xc00006e720, 0x20)
+	D:/goProject/careful/controller/docker.go:370 +0x20f
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goProject/pkg/mod/github.com/gin-gonic/gin@v1.8.1/context.go:173
+github.com/zenfire-cn/webkit/web.setGinRecovery.func1(0xc000128600)
+	D:/goProject/pkg/mod/github.com/zenfire-cn/webkit@v0.0.3/web/log.go:80 +0x88
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goProject/pkg/mod/github.com/gin-gonic/gin@v1.8.1/context.go:173
+github.com/zenfire-cn/webkit/web.setGinLog.func1(0xc000128600)
+	D:/goProject/pkg/mod/github.com/zenfire-cn/webkit@v0.0.3/web/log.go:21 +0xb4
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/goProject/pkg/mod/github.com/gin-gonic/gin@v1.8.1/context.go:173
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000084680, 0xc000128600)
+	D:/goProject/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:616 +0x671
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000084680, {0xa0be98, 0xc00012a0e0}, 0xc000714300)
+	D:/goProject/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:572 +0x1dd
+net/http.serverHandler.ServeHTTP({0xa0a3f0}, {0xa0be98, 0xc00012a0e0}, 0xc000714300)
+	D:/Go/src/net/http/server.go:2879 +0x43b
+net/http.(*conn).serve(0xc00068c000, {0xa12140, 0xc000493860})
+	D:/Go/src/net/http/server.go:1930 +0xb08
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:3034 +0x4e8
+	{"REQUEST": "POST /api/docker/run HTTP/1.1\r\nHost: localhost:9876\r\nAccept: */*\r\nAccept-Encoding: gzip, deflate, br\r\nCache-Control: no-cache\r\nConnection: keep-alive\r\nContent-Length: 60\r\nContent-Type: application/json\r\nPostman-Token: b79c372c-5fe9-40b3-8f6d-376f0764d2d6\r\nUser-Agent: PostmanRuntime/7.26.8\r\n\r\n"}
+2022-06-18 22:09:55	INFO	web/log.go:35	/api/docker/run	{"S": 500, "M": "POST", "T": "1.1589717s", "Q": "", "IP": "::1"}
+2022-06-18 22:10:49	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:10:53	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "948.1741ms", "Q": "", "IP": "::1"}
+2022-06-18 22:11:05	INFO	web/log.go:35	/api/docker/run	{"S": 200, "M": "POST", "T": "329.7183ms", "Q": "", "IP": "::1"}
+2022-06-18 22:11:24	INFO	web/log.go:35	/api/docker/logs	{"S": 200, "M": "GET", "T": "32.5313ms", "Q": "name=test&tails=20", "IP": "::1"}
+2022-06-18 22:14:22	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "21.909ms", "Q": "name=redis&name=test", "IP": "::1"}
+2022-06-18 22:14:33	INFO	web/log.go:35	/api/docker/info	{"S": 200, "M": "GET", "T": "25.3743ms", "Q": "name=test", "IP": "::1"}
+2022-06-18 22:15:33	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "19.5844ms", "Q": "name=redis&name=test&name=test2", "IP": "::1"}
+2022-06-18 22:16:42	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:16:44	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "20.6584ms", "Q": "name=redis&name=test&name=test2", "IP": "::1"}
+2022-06-18 22:17:16	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:17:18	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "20.8368ms", "Q": "name=redis&name=test&name=test2", "IP": "::1"}
+2022-06-18 22:18:05	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:18:07	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "21.858ms", "Q": "name=redis&name=test&name=test2", "IP": "::1"}
+2022-06-18 22:19:03	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:19:06	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "18.9759ms", "Q": "name=redis&name=test&name=test2", "IP": "::1"}
+2022-06-18 22:19:11	INFO	web/log.go:35	/api/docker/info	{"S": 200, "M": "GET", "T": "11.3532ms", "Q": "name=test", "IP": "::1"}
+2022-06-18 22:19:14	ERROR	rest/restRes.go:34	该容器不存在	{"caller": "D:/goProject/careful/controller/docker.go:335"}
+2022-06-18 22:19:14	INFO	web/log.go:35	/api/docker/info	{"S": 200, "M": "GET", "T": "17.451ms", "Q": "name=test2", "IP": "::1"}
+2022-06-18 22:20:06	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:20:08	INFO	web/log.go:35	/api/docker/info	{"S": 200, "M": "GET", "T": "19.0752ms", "Q": "name=test2", "IP": "::1"}
