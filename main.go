@@ -23,7 +23,9 @@ func main() {
 	}
 	r := web.Init(gin.ReleaseMode, webConf) // 初始化：gin结合zap日志与lumberjack日志归档
 
-	model.Init()
+	if viper.GetString("App.Mode") == "main" {
+		model.Init()
+	}
 
 	controller.InitRouter(r)
 
