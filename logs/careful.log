@@ -49,3 +49,103 @@
 2022-06-18 12:15:43	INFO	web/log.go:35	/api/node	{"S": 200, "M": "GET", "T": "1.4578ms", "Q": "", "IP": "::1"}
 2022-06-18 12:15:54	INFO	web/log.go:35	/api/node	{"S": 200, "M": "PUT", "T": "92.2753ms", "Q": "", "IP": "::1"}
 2022-06-18 12:15:56	INFO	web/log.go:35	/api/node	{"S": 200, "M": "GET", "T": "1.3581ms", "Q": "", "IP": "::1"}
+2022-06-18 12:16:21	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 12:16:22	INFO	web/log.go:35	/api/node	{"S": 200, "M": "GET", "T": "1.6276ms", "Q": "", "IP": "::1"}
+2022-06-18 15:51:07	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 15:51:54	ERROR	rest/restRes.go:34	参数 name 为空	{"caller": "D:/goProject/careful/controller/docker.go:28"}
+2022-06-18 15:51:54	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "1.1787ms", "Q": "", "IP": "::1"}
+2022-06-18 15:52:05	ERROR	rest/restRes.go:34	参数 name 为空	{"caller": "D:/goProject/careful/controller/docker.go:28"}
+2022-06-18 15:52:05	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "451.9µs", "Q": "", "IP": "::1"}
+2022-06-18 15:52:18	ERROR	rest/restRes.go:34	参数 name 为空	{"caller": "D:/goProject/careful/controller/docker.go:28"}
+2022-06-18 15:52:18	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "558µs", "Q": "", "IP": "::1"}
+2022-06-18 15:52:39	ERROR	rest/restRes.go:34	参数 name 为空	{"caller": "D:/goProject/careful/controller/docker.go:28"}
+2022-06-18 15:52:39	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "145µs", "Q": "", "IP": "::1"}
+2022-06-18 15:53:10	ERROR	rest/restRes.go:34	参数 name 为空	{"caller": "D:/goProject/careful/controller/docker.go:28"}
+2022-06-18 15:53:10	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "1.3271ms", "Q": "", "IP": "::1"}
+2022-06-18 15:53:25	ERROR	rest/restRes.go:34	参数 name 为空	{"caller": "D:/goProject/careful/controller/docker.go:28"}
+2022-06-18 15:53:25	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "0s", "Q": "", "IP": "::1"}
+2022-06-18 15:53:59	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 15:54:10	ERROR	rest/restRes.go:34	参数 name 为空	{"caller": "D:/goProject/careful/controller/docker.go:28"}
+2022-06-18 15:54:10	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "1.032ms", "Q": "", "IP": "::1"}
+2022-06-18 15:57:28	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 15:57:34	ERROR	rest/restRes.go:34	参数 name 为空	{"caller": "D:/goProject/careful/controller/docker.go:28"}
+2022-06-18 15:57:34	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "565.4µs", "Q": "", "IP": "::1"}
+2022-06-18 15:57:40	ERROR	rest/restRes.go:34	参数 name 为空	{"caller": "D:/goProject/careful/controller/docker.go:28"}
+2022-06-18 15:57:40	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "216.8µs", "Q": "", "IP": "::1"}
+2022-06-18 15:57:48	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "17.403ms", "Q": "name=test", "IP": "::1"}
+2022-06-18 16:00:44	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "15.1272ms", "Q": "name=test", "IP": "::1"}
+2022-06-18 16:00:56	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "21.688ms", "Q": "name=test", "IP": "::1"}
+2022-06-18 16:01:15	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "26.6607ms", "Q": "name=test", "IP": "::1"}
+2022-06-18 16:01:24	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:01:27	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "19.5461ms", "Q": "name=test", "IP": "::1"}
+2022-06-18 16:02:18	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:02:24	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "21.6087ms", "Q": "name=test", "IP": "::1"}
+2022-06-18 16:02:39	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:02:44	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "14.7588ms", "Q": "name=redis", "IP": "::1"}
+2022-06-18 16:07:24	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:07:29	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:07:32	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "17.6715ms", "Q": "name=redis", "IP": "::1"}
+2022-06-18 16:07:37	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "14.4534ms", "Q": "name=redis&name=test", "IP": "::1"}
+2022-06-18 16:07:53	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:07:54	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "19.0349ms", "Q": "name=redis&name=test", "IP": "::1"}
+2022-06-18 16:09:17	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:09:19	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "17.4103ms", "Q": "name=redis&name=test", "IP": "::1"}
+2022-06-18 16:10:40	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:10:42	INFO	web/log.go:35	/api/docker/list	{"S": 200, "M": "GET", "T": "28.0413ms", "Q": "name=redis&name=test", "IP": "::1"}
+2022-06-18 16:16:15	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:16:27	ERROR	rest/restRes.go:34	json: Unmarshal(non-pointer params.DockerNameReq)	{"caller": "D:/goProject/careful/controller/docker.go:86"}
+2022-06-18 16:16:27	ERROR	web/log.go:32	json: Unmarshal(non-pointer params.DockerNameReq)
+2022-06-18 16:16:49	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:16:50	ERROR	rest/restRes.go:34	该容器不存在	{"caller": "D:/goProject/careful/controller/docker.go:116"}
+2022-06-18 16:16:50	INFO	web/log.go:35	/api/docker/stop	{"S": 200, "M": "PUT", "T": "15.9831ms", "Q": "", "IP": "::1"}
+2022-06-18 16:16:56	INFO	web/log.go:35	/api/docker/stop	{"S": 200, "M": "PUT", "T": "708.5204ms", "Q": "", "IP": "::1"}
+2022-06-18 16:17:57	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:18:06	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:18:32	ERROR	rest/restRes.go:34	该容器不存在	{"caller": "D:/goProject/careful/controller/docker.go:167"}
+2022-06-18 16:18:32	INFO	web/log.go:35	/api/docker/start	{"S": 200, "M": "PUT", "T": "16.1583ms", "Q": "", "IP": "::1"}
+2022-06-18 16:18:36	INFO	web/log.go:35	/api/docker/start	{"S": 200, "M": "PUT", "T": "775.5463ms", "Q": "", "IP": "::1"}
+2022-06-18 16:18:38	INFO	web/log.go:35	/api/docker/start	{"S": 200, "M": "PUT", "T": "45.8894ms", "Q": "", "IP": "::1"}
+2022-06-18 16:21:52	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:22:02	INFO	web/log.go:35	/api/docker/stop	{"S": 200, "M": "PUT", "T": "488.8748ms", "Q": "", "IP": "::1"}
+2022-06-18 16:22:14	INFO	web/log.go:35	/api/docker/start	{"S": 200, "M": "PUT", "T": "512.4903ms", "Q": "", "IP": "::1"}
+2022-06-18 16:22:21	INFO	web/log.go:35	/api/docker/start	{"S": 200, "M": "PUT", "T": "1.0192625s", "Q": "", "IP": "::1"}
+2022-06-18 16:22:28	INFO	web/log.go:35	/api/docker/start	{"S": 200, "M": "PUT", "T": "53.1774ms", "Q": "", "IP": "::1"}
+2022-06-18 16:22:33	INFO	web/log.go:35	/api/docker/start	{"S": 200, "M": "PUT", "T": "38.3529ms", "Q": "", "IP": "::1"}
+2022-06-18 16:25:54	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:26:02	ERROR	rest/restRes.go:34	该容器不存在	{"caller": "D:/goProject/careful/controller/docker.go:223"}
+2022-06-18 16:26:02	INFO	web/log.go:35	/api/docker	{"S": 200, "M": "DELETE", "T": "15.7038ms", "Q": "", "IP": "::1"}
+2022-06-18 16:26:08	ERROR	rest/restRes.go:34	Error response from daemon: You cannot remove a running container 057a3bda72b12819c0a566a71c5a968663896cb5ce9faabdb444fb23fb400b5f. Stop the container before attempting removal or force remove	{"caller": "D:/goProject/careful/controller/docker.go:228"}
+2022-06-18 16:26:08	INFO	web/log.go:35	/api/docker	{"S": 200, "M": "DELETE", "T": "23.1359ms", "Q": "", "IP": "::1"}
+2022-06-18 16:26:29	INFO	web/log.go:35	/api/docker/stop	{"S": 200, "M": "PUT", "T": "439.9515ms", "Q": "", "IP": "::1"}
+2022-06-18 16:26:31	INFO	web/log.go:35	/api/docker	{"S": 200, "M": "DELETE", "T": "56.1485ms", "Q": "", "IP": "::1"}
+2022-06-18 16:32:57	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:33:11	ERROR	rest/restRes.go:34	Error response from daemon: Bad parameters: you must choose at least one stream	{"caller": "D:/goProject/careful/controller/docker.go:278"}
+2022-06-18 16:33:11	INFO	web/log.go:35	/api/docker/logs	{"S": 200, "M": "GET", "T": "22.6503ms", "Q": "name=redis", "IP": "::1"}
+2022-06-18 16:33:58	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:34:00	ERROR	rest/restRes.go:34	Error response from daemon: Bad parameters: you must choose at least one stream	{"caller": "D:/goProject/careful/controller/docker.go:278"}
+2022-06-18 16:34:00	INFO	web/log.go:35	/api/docker/logs	{"S": 200, "M": "GET", "T": "23.4523ms", "Q": "name=redis", "IP": "::1"}
+2022-06-18 16:34:13	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:34:14	ERROR	rest/restRes.go:34	Error response from daemon: Bad parameters: you must choose at least one stream	{"caller": "D:/goProject/careful/controller/docker.go:277"}
+2022-06-18 16:34:14	INFO	web/log.go:35	/api/docker/logs	{"S": 200, "M": "GET", "T": "23.2753ms", "Q": "name=redis", "IP": "::1"}
+2022-06-18 16:35:11	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:35:12	INFO	web/log.go:35	/api/docker/logs	{"S": 200, "M": "GET", "T": "26.7333ms", "Q": "name=redis", "IP": "::1"}
+2022-06-18 16:36:19	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:36:21	INFO	web/log.go:35	/api/docker/stop	{"S": 200, "M": "PUT", "T": "467.3414ms", "Q": "", "IP": "::1"}
+2022-06-18 16:36:34	INFO	web/log.go:35	/api/docker/start	{"S": 200, "M": "PUT", "T": "591.8899ms", "Q": "", "IP": "::1"}
+2022-06-18 16:36:36	INFO	web/log.go:35	/api/docker/logs	{"S": 200, "M": "GET", "T": "19.0662ms", "Q": "name=redis", "IP": "::1"}
+2022-06-18 16:38:43	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:38:52	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:38:58	ERROR	rest/restRes.go:34	参数 tails 为空	{"caller": "D:/goProject/careful/controller/docker.go:247"}
+2022-06-18 16:38:58	INFO	web/log.go:35	/api/docker/logs	{"S": 200, "M": "GET", "T": "346.2µs", "Q": "name=redis", "IP": "::1"}
+2022-06-18 16:39:04	INFO	web/log.go:35	/api/docker/logs	{"S": 200, "M": "GET", "T": "22.7162ms", "Q": "name=redis&tails=10", "IP": "::1"}
+2022-06-18 16:39:10	INFO	web/log.go:35	/api/docker/logs	{"S": 200, "M": "GET", "T": "47.772ms", "Q": "name=redis&tails=1", "IP": "::1"}
+2022-06-18 16:39:13	INFO	web/log.go:35	/api/docker/logs	{"S": 200, "M": "GET", "T": "54.0131ms", "Q": "name=redis&tails=2", "IP": "::1"}
+2022-06-18 16:41:27	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:41:30	ERROR	rest/restRes.go:34	参数 name 为空	{"caller": "D:/goProject/careful/controller/docker.go:308"}
+2022-06-18 16:41:30	INFO	web/log.go:35	/api/docker/info	{"S": 200, "M": "GET", "T": "554.3µs", "Q": "name=", "IP": "::1"}
+2022-06-18 16:41:33	ERROR	rest/restRes.go:34	参数 name 为空	{"caller": "D:/goProject/careful/controller/docker.go:308"}
+2022-06-18 16:41:33	INFO	web/log.go:35	/api/docker/info	{"S": 200, "M": "GET", "T": "994.1µs", "Q": "name=test", "IP": "::1"}
+2022-06-18 16:42:04	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 16:42:06	ERROR	rest/restRes.go:34	参数 name 为空	{"caller": "D:/goProject/careful/controller/docker.go:305"}
+2022-06-18 16:42:06	INFO	web/log.go:35	/api/docker/info	{"S": 200, "M": "GET", "T": "0s", "Q": "name=", "IP": "::1"}
+2022-06-18 16:42:07	INFO	web/log.go:35	/api/docker/info	{"S": 200, "M": "GET", "T": "16.2106ms", "Q": "name=test", "IP": "::1"}

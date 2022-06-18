@@ -30,5 +30,15 @@ func InitRouter(r *gin.Engine) {
 			node.PUT("", Node.Update)
 			node.DELETE("", Node.Delete)
 		}
+
+		docker := api.Group("/docker")
+		{
+			docker.GET("list", Docker.List)
+			docker.PUT("stop", Docker.Stop)
+			docker.PUT("start", Docker.Start)
+			docker.DELETE("", Docker.Delete)
+			docker.GET("logs", Docker.Logs)
+			docker.GET("info", Docker.Info)
+		}
 	}
 }

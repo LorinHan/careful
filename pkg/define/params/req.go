@@ -72,3 +72,46 @@ func (i *IDReq) Check() error {
 	}
 	return nil
 }
+
+type DockerListReq struct {
+	Name []string `json:"name"`
+}
+
+func (d *DockerListReq) Check() error {
+	if len(d.Name) == 0 {
+		return errors.New("参数 name 为空")
+	}
+	return nil
+}
+
+type DockerNameReq struct {
+	Name string `json:"name"`
+}
+
+func (d *DockerNameReq) Check() error {
+	if len(d.Name) == 0 {
+		return errors.New("参数 name 为空")
+	}
+	return nil
+}
+
+type DockerStartReq struct {
+	DockerNameReq
+	Restart bool `json:"restart"`
+}
+
+func (d *DockerStartReq) Check() error {
+	return d.DockerNameReq.Check()
+}
+
+type DockerLogsReq struct {
+	DockerNameReq
+	Tails string `json:"tails"`
+}
+
+func (d *DockerLogsReq) Check() error {
+	if d.Tails == "" {
+		return errors.New("参数 tails 为空")
+	}
+	return d.DockerNameReq.Check()
+}
