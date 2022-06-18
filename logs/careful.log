@@ -16,3 +16,36 @@
 2022-06-18 00:07:13	INFO	web/log.go:35	/api/folder	{"S": 200, "M": "GET", "T": "1.066ms", "Q": "", "IP": "::1"}
 2022-06-18 00:07:55	INFO	web/log.go:35	/api/folder	{"S": 200, "M": "DELETE", "T": "46.4552ms", "Q": "", "IP": "::1"}
 2022-06-18 00:08:05	INFO	web/log.go:35	/api/folder	{"S": 200, "M": "GET", "T": "273µs", "Q": "", "IP": "::1"}
+2022-06-18 11:34:22	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 11:34:46	INFO	web/log.go:35	/api/server/upload	{"S": 200, "M": "POST", "T": "1.9802ms", "Q": "", "IP": "::1"}
+2022-06-18 11:35:05	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 11:35:13	INFO	web/log.go:35	/api/server/upload	{"S": 200, "M": "POST", "T": "3.2143ms", "Q": "", "IP": "::1"}
+2022-06-18 11:36:53	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 11:38:06	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 11:38:38	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 12:10:30	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 12:11:25	ERROR	rest/restRes.go:34	参数 ip 为空	{"caller": "D:/goProject/careful/controller/node.go:24"}
+2022-06-18 12:11:25	INFO	web/log.go:35	/api/node	{"S": 200, "M": "POST", "T": "1.5912ms", "Q": "", "IP": "::1"}
+2022-06-18 12:11:38	ERROR	rest/restRes.go:34	Error 1146: Table 'world.nodes' doesn't exist	{"caller": "D:/goProject/careful/controller/node.go:30"}
+2022-06-18 12:11:38	INFO	web/log.go:35	/api/node	{"S": 200, "M": "POST", "T": "4.9137ms", "Q": "", "IP": "::1"}
+2022-06-18 12:11:58	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 12:12:00	INFO	web/log.go:35	/api/node	{"S": 200, "M": "POST", "T": "17.5237ms", "Q": "", "IP": "::1"}
+2022-06-18 12:12:06	INFO	web/log.go:35	/api/node	{"S": 200, "M": "GET", "T": "1.5141ms", "Q": "", "IP": "::1"}
+2022-06-18 12:12:20	INFO	web/log.go:35	/api/node	{"S": 200, "M": "POST", "T": "94.0593ms", "Q": "", "IP": "::1"}
+2022-06-18 12:12:22	INFO	web/log.go:35	/api/node	{"S": 200, "M": "GET", "T": "426.3µs", "Q": "", "IP": "::1"}
+2022-06-18 12:12:40	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 12:12:41	INFO	web/log.go:35	/api/node	{"S": 200, "M": "GET", "T": "1.0305ms", "Q": "", "IP": "::1"}
+2022-06-18 12:12:51	ERROR	rest/restRes.go:34	参数 ip 为空	{"caller": "D:/goProject/careful/controller/node.go:56"}
+2022-06-18 12:12:51	INFO	web/log.go:35	/api/node	{"S": 200, "M": "PUT", "T": "926.1µs", "Q": "", "IP": "::1"}
+2022-06-18 12:13:10	INFO	web/log.go:35	/api/node	{"S": 200, "M": "GET", "T": "1.4913ms", "Q": "", "IP": "::1"}
+2022-06-18 12:14:35	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 12:14:36	INFO	web/log.go:35	/api/node	{"S": 200, "M": "GET", "T": "1.4173ms", "Q": "", "IP": "::1"}
+2022-06-18 12:15:02	INFO	web/log.go:35	/api/folder	{"S": 200, "M": "GET", "T": "1.0002ms", "Q": "", "IP": "::1"}
+2022-06-18 12:15:12	INFO	web/log.go:35	/api/folder	{"S": 200, "M": "POST", "T": "91.2524ms", "Q": "", "IP": "::1"}
+2022-06-18 12:15:13	INFO	web/log.go:35	/api/folder	{"S": 200, "M": "POST", "T": "45.2404ms", "Q": "", "IP": "::1"}
+2022-06-18 12:15:15	INFO	web/log.go:35	/api/folder	{"S": 200, "M": "GET", "T": "1.3422ms", "Q": "", "IP": "::1"}
+2022-06-18 12:15:22	INFO	web/log.go:35	/api/node	{"S": 200, "M": "GET", "T": "1.5095ms", "Q": "", "IP": "::1"}
+2022-06-18 12:15:40	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 12:15:43	INFO	web/log.go:35	/api/node	{"S": 200, "M": "GET", "T": "1.4578ms", "Q": "", "IP": "::1"}
+2022-06-18 12:15:54	INFO	web/log.go:35	/api/node	{"S": 200, "M": "PUT", "T": "92.2753ms", "Q": "", "IP": "::1"}
+2022-06-18 12:15:56	INFO	web/log.go:35	/api/node	{"S": 200, "M": "GET", "T": "1.3581ms", "Q": "", "IP": "::1"}

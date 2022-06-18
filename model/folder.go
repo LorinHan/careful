@@ -8,7 +8,7 @@ import (
 
 type Folder struct {
 	ID        uint      `gorm:"primaryKey" json:"id"`
-	Name      string    `gorm:"comment:文件夹名称;" json:"name"`
+	Name      string    `gorm:"not null;default:'';comment:文件夹名称;" json:"name"`
 	CreatedAt time.Time `json:"created_at,omitempty"`
 	UpdatedAt time.Time `json:"updated_at,omitempty"`
 }
@@ -33,7 +33,7 @@ func (f *Folder) Query(col ...string) ([]Folder, error) {
 	if len(col) > 0 {
 		selectCol = col[0]
 	}
-	if err := database.GetDB().Select(selectCol).Where(f).Order("created_at").Find(&list).Error; err != nil {
+	if err := database.GetDB().Select(selectCol).Where(f).Order("created_at desc").Find(&list).Error; err != nil {
 		return nil, err
 	}
 	return list, nil

@@ -8,6 +8,7 @@ import (
 	"go.uber.org/zap"
 	"os"
 	"path"
+	"path/filepath"
 )
 
 func TestCtrl(ctx *gin.Context) {
@@ -31,26 +32,28 @@ func Upload(ctx *gin.Context) {
 		return
 	}
 
-	if !utility.PathFileExists("./static") {
-		if err := os.MkdirAll("./static", os.ModePerm); err != nil {
+	if !utility.PathFileExists(p) {
+		if err := os.MkdirAll(p, os.ModePerm); err != nil {
 			rest.Error(ctx, err.Error())
 			return
 		}
 	}
-	dst := path.Join("./static", file.Filename)
+	dst := path.Join(p, file.Filename)
 	if err := ctx.SaveUploadedFile(file, dst); err != nil {
 		rest.Error(ctx, err.Error())
 		return
 	}
 
-	if err := zip.Unzip(dst, p); err != nil {
-		rest.Error(ctx, err.Error())
-		return
-	}
+	if filepath.Ext(file.Filename) == ".zip" {
+		if err := zip.Unzip(dst, p); err != nil {
+			rest.Error(ctx, err.Error())
+			return
+		}
 
-	if err := os.Remove(dst); err != nil {
-		rest.Error(ctx, err.Error())
-		return
+		if err := os.Remove(dst); err != nil {
+			rest.Error(ctx, err.Error())
+			return
+		}
 	}
 
 	rest.Success(ctx, nil)
