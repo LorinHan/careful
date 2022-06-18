@@ -126,3 +126,75 @@ func (d *DockerRunReq) Check() error {
 	}
 	return nil
 }
+
+type ServerCreateReq struct {
+	Name     string `json:"name"`
+	FolderID uint   `json:"folder_id"`
+}
+
+func (s *ServerCreateReq) Check() error {
+	if s.Name == "" {
+		return errors.New("参数 name 为空")
+	}
+	if s.FolderID == 0 {
+		return errors.New("参数 folder_id 为空")
+	}
+	return nil
+}
+
+type ServerUpdateReq struct {
+	ID   uint   `json:"id"`
+	Name string `json:"name"`
+}
+
+func (s *ServerUpdateReq) Check() error {
+	if s.ID == 0 {
+		return errors.New("参数 id 为空")
+	}
+	if s.Name == "" {
+		return errors.New("参数 name 为空")
+	}
+	return nil
+}
+
+type ServerPointCreateReq struct {
+	Name          string `json:"name"`
+	ContainerName string `json:"container_name"`
+	ServerID      uint   `json:"server_id"`
+	NodeID        uint   `json:"node_id"`
+}
+
+func (sp *ServerPointCreateReq) Check() error {
+	if sp.Name == "" {
+		return errors.New("参数 name 为空")
+	}
+	if sp.ContainerName == "" {
+		return errors.New("参数 container_name 为空")
+	}
+	if sp.ServerID == 0 {
+		return errors.New("参数 server_id 为空")
+	}
+	if sp.NodeID == 0 {
+		return errors.New("参数 node_id 为空")
+	}
+	return nil
+}
+
+type ServerPointUpdateReq struct {
+	ID            uint   `json:"id"`
+	Name          string `json:"name"`
+	ContainerName string `json:"container_name"`
+	NodeID        uint   `json:"node_id"`
+	ShPath        string `json:"sh_path"`
+	ConfPath      string `json:"conf_path"`
+}
+
+func (sp *ServerPointUpdateReq) Check() error {
+	if sp.ID == 0 {
+		return errors.New("参数 id 为空")
+	}
+	if sp.Name == "" && sp.NodeID == 0 && sp.ShPath == "" && sp.ConfPath == "" && sp.ContainerName == "" {
+		return errors.New("参数 name, container_name, node_id, sh_path, conf_path 都为空")
+	}
+	return nil
+}

@@ -7,6 +7,6 @@ type DockerListResp struct {
 	State       string `json:"state"`
 	Status      string `json:"status"`
 	Created     int64  `json:"created"`
-	PrivatePort uint16  `json:"private_port"`
-	PublicPort  uint16  `json:"public_port"`
+	PrivatePort uint16 `json:"private_port"`
+	PublicPort  uint16 `json:"public_port"`
 }

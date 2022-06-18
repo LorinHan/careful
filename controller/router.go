@@ -10,7 +10,20 @@ func InitRouter(r *gin.Engine) {
 		// 服务管理
 		server := api.Group("/server")
 		{
-			server.POST("/upload", Upload)
+			server.POST("/upload", Server.Upload)
+
+			server.POST("", Server.Create)
+			server.PUT("", Server.Update)
+			server.DELETE("", Server.Delete)
+
+			// 服务节点管理
+			point := server.Group("/point")
+			{
+				point.GET("", ServerPoint.List)
+				point.POST("", ServerPoint.Create)
+				point.PUT("", ServerPoint.Update)
+				point.DELETE("", ServerPoint.Delete)
+			}
 		}
 
 		// 文件夹管理

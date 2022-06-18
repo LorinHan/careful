@@ -1,26 +1,23 @@
 package controller
 
 import (
+	"careful/model"
+	"careful/pkg/define/params"
 	"careful/pkg/zip"
 	"github.com/gin-gonic/gin"
 	"github.com/zenfire-cn/commkit/utility"
 	"github.com/zenfire-cn/webkit/rest"
-	"go.uber.org/zap"
 	"os"
 	"path"
 	"path/filepath"
 )
 
-func TestCtrl(ctx *gin.Context) {
-	logger := zap.L()
-	num := ctx.Param("num")
+var Server = &server{}
 
-	logger.Info("params", zap.String("num", num))
-
-	rest.Success(ctx, "Hello webkit, param is "+num)
+type server struct {
 }
 
-func Upload(ctx *gin.Context) {
+func (s *server) Upload(ctx *gin.Context) {
 	file, err := ctx.FormFile("file")
 	if err != nil {
 		rest.Error(ctx, err.Error())
@@ -54,6 +51,86 @@ func Upload(ctx *gin.Context) {
 			rest.Error(ctx, err.Error())
 			return
 		}
+	}
+
+	rest.Success(ctx, nil)
+}
+
+func (s *server) Create(ctx *gin.Context) {
+	var req params.ServerCreateReq
+
+	if err := ctx.Bind(&req); err != nil {
+		rest.Error(ctx, err.Error())
+		return
+	}
+
+	if err := req.Check(); err != nil {
+		rest.Error(ctx, err.Error())
+		return
+	}
+
+	folderModel := &model.Folder{ID: req.FolderID}
+	exist, err := folderModel.QueryOne("id")
+	if err != nil {
+		rest.Error(ctx, err.Error())
+		return
+	}
+	if !exist {
+		rest.Error(ctx, "文件夹不存在")
+		return
+	}
+
+	serverModel := &model.Server{Name: req.Name, FolderID: req.FolderID}
+	if err := serverModel.Create(); err != nil {
+		rest.Error(ctx, err.Error())
+		return
+	}
+
+	rest.Success(ctx, nil)
+}
+
+func (s *server) Update(ctx *gin.Context) {
+	var req params.ServerUpdateReq
+	if err := ctx.Bind(&req); err != nil {
+		rest.Error(ctx, err.Error())
+		return
+	}
+
+	if err := req.Check(); err != nil {
+		rest.Error(ctx, err.Error())
+		return
+	}
+
+	serverModel := &model.Server{
+		ID:   req.ID,
+		Name: req.Name,
+	}
+	if err := serverModel.Update(); err != nil {
+		rest.Error(ctx, err.Error())
+		return
+	}
+
+	rest.Success(ctx, nil)
+}
+
+func (s *server) Delete(ctx *gin.Context) {
+	var req params.IDReq
+	if err := ctx.Bind(&req); err != nil {
+		rest.Error(ctx, err.Error())
+		return
+	}
+
+	if err := req.Check(); err != nil {
+		rest.Error(ctx, err.Error())
+		return
+	}
+
+	serverModel := &model.Server{
+		ID: req.ID,
+	}
+	if err := serverModel.Delete(); err != nil {
+		rest.Error(ctx, err.Error())
+		return
 	}
 
 	rest.Success(ctx, nil)

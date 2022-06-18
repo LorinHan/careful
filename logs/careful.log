@@ -306,3 +306,59 @@ created by net/http.(*Server).Serve
 2022-06-18 22:19:14	INFO	web/log.go:35	/api/docker/info	{"S": 200, "M": "GET", "T": "17.451ms", "Q": "name=test2", "IP": "::1"}
 2022-06-18 22:20:06	INFO	careful/main.go:31	server running on port: 9876
 2022-06-18 22:20:08	INFO	web/log.go:35	/api/docker/info	{"S": 200, "M": "GET", "T": "19.0752ms", "Q": "name=test2", "IP": "::1"}
+2022-06-18 22:20:44	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:20:45	INFO	web/log.go:35	/api/docker/info	{"S": 200, "M": "GET", "T": "12.6308ms", "Q": "name=test2", "IP": "::1"}
+2022-06-18 22:47:12	INFO	web/log.go:35	/api/folder	{"S": 200, "M": "GET", "T": "81.7002ms", "Q": "", "IP": "::1"}
+2022-06-18 22:47:20	INFO	web/log.go:35	/api/folder	{"S": 200, "M": "DELETE", "T": "56.3681ms", "Q": "", "IP": "::1"}
+2022-06-18 22:47:23	INFO	web/log.go:35	/api/folder	{"S": 200, "M": "GET", "T": "994.3µs", "Q": "", "IP": "::1"}
+2022-06-18 22:55:23	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 22:55:54	ERROR	rest/restRes.go:34	参数 folder_id 为空	{"caller": "D:/goProject/careful/controller/server.go:68"}
+2022-06-18 22:55:54	INFO	web/log.go:35	/api/server	{"S": 200, "M": "POST", "T": "882.8µs", "Q": "", "IP": "::1"}
+2022-06-18 22:56:02	ERROR	rest/restRes.go:34	文件夹不存在	{"caller": "D:/goProject/careful/controller/server.go:79"}
+2022-06-18 22:56:02	INFO	web/log.go:35	/api/server	{"S": 200, "M": "POST", "T": "5.0573ms", "Q": "", "IP": "::1"}
+2022-06-18 22:56:06	INFO	web/log.go:35	/api/server	{"S": 200, "M": "POST", "T": "78.9761ms", "Q": "", "IP": "::1"}
+2022-06-18 22:57:03	INFO	web/log.go:35	/api/server	{"S": 200, "M": "POST", "T": "46.8371ms", "Q": "", "IP": "::1"}
+2022-06-18 22:57:17	INFO	web/log.go:35	/api/folder	{"S": 200, "M": "PUT", "T": "2.6185ms", "Q": "", "IP": "::1"}
+2022-06-18 22:57:21	INFO	web/log.go:35	/api/folder	{"S": 200, "M": "PUT", "T": "1.4584ms", "Q": "", "IP": "::1"}
+2022-06-18 22:57:35	INFO	web/log.go:35	/api/server	{"S": 200, "M": "PUT", "T": "30.078ms", "Q": "", "IP": "::1"}
+2022-06-18 22:57:54	INFO	web/log.go:35	/api/server	{"S": 200, "M": "DELETE", "T": "79.8824ms", "Q": "", "IP": "::1"}
+2022-06-18 23:14:53	ERROR	model/db.go:33	failed to parse '' as default value for uint, got error: strconv.ParseUint: parsing "''": invalid syntax
+2022-06-18 23:14:53	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 23:15:22	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 23:16:28	ERROR	rest/restRes.go:34	参数 server_id 为空	{"caller": "D:/goProject/careful/controller/server_point.go:24"}
+2022-06-18 23:16:28	INFO	web/log.go:35	/api/server/point	{"S": 200, "M": "POST", "T": "3.132ms", "Q": "", "IP": "::1"}
+2022-06-18 23:16:38	ERROR	rest/restRes.go:34	参数 node_id 为空	{"caller": "D:/goProject/careful/controller/server_point.go:24"}
+2022-06-18 23:16:38	INFO	web/log.go:35	/api/server/point	{"S": 200, "M": "POST", "T": "776.3µs", "Q": "", "IP": "::1"}
+2022-06-18 23:16:44	ERROR	rest/restRes.go:34	invalid character '}' looking for beginning of object key string	{"caller": "D:/goProject/careful/controller/server_point.go:19"}
+2022-06-18 23:16:44	ERROR	web/log.go:32	invalid character '}' looking for beginning of object key string
+2022-06-18 23:16:47	ERROR	rest/restRes.go:34	网络节点不存在	{"caller": "D:/goProject/careful/controller/server_point.go:35"}
+2022-06-18 23:16:47	INFO	web/log.go:35	/api/server/point	{"S": 200, "M": "POST", "T": "8.659ms", "Q": "", "IP": "::1"}
+2022-06-18 23:16:51	ERROR	rest/restRes.go:34	服务不存在	{"caller": "D:/goProject/careful/controller/server_point.go:46"}
+2022-06-18 23:16:51	INFO	web/log.go:35	/api/server/point	{"S": 200, "M": "POST", "T": "2.8084ms", "Q": "", "IP": "::1"}
+2022-06-18 23:16:54	INFO	web/log.go:35	/api/server/point	{"S": 200, "M": "POST", "T": "31.1673ms", "Q": "", "IP": "::1"}
+2022-06-18 23:23:11	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 23:23:30	ERROR	rest/restRes.go:34	参数 id 为空	{"caller": "D:/goProject/careful/controller/server_point.go:72"}
+2022-06-18 23:23:30	INFO	web/log.go:35	/api/server/point	{"S": 200, "M": "PUT", "T": "997.2µs", "Q": "", "IP": "::1"}
+2022-06-18 23:23:41	ERROR	rest/restRes.go:34	参数 name, node_id, sh_path, conf_path 都为空	{"caller": "D:/goProject/careful/controller/server_point.go:72"}
+2022-06-18 23:23:41	INFO	web/log.go:35	/api/server/point	{"S": 200, "M": "PUT", "T": "617.4µs", "Q": "", "IP": "::1"}
+2022-06-18 23:23:59	INFO	web/log.go:35	/api/server/point	{"S": 200, "M": "PUT", "T": "93.9643ms", "Q": "", "IP": "::1"}
+2022-06-18 23:24:13	ERROR	rest/restRes.go:34	网络节点不存在	{"caller": "D:/goProject/careful/controller/server_point.go:84"}
+2022-06-18 23:24:13	INFO	web/log.go:35	/api/server/point	{"S": 200, "M": "PUT", "T": "1.74ms", "Q": "", "IP": "::1"}
+2022-06-18 23:24:16	INFO	web/log.go:35	/api/server/point	{"S": 200, "M": "PUT", "T": "77.3237ms", "Q": "", "IP": "::1"}
+2022-06-18 23:24:32	INFO	web/log.go:35	/api/server/point	{"S": 200, "M": "PUT", "T": "27.9291ms", "Q": "", "IP": "::1"}
+2022-06-18 23:24:43	INFO	web/log.go:35	/api/server/point	{"S": 200, "M": "PUT", "T": "32.7986ms", "Q": "", "IP": "::1"}
+2022-06-18 23:30:28	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 23:30:33	ERROR	rest/restRes.go:34	参数 container_name 为空	{"caller": "D:/goProject/careful/controller/server_point.go:24"}
+2022-06-18 23:30:33	INFO	web/log.go:35	/api/server/point	{"S": 200, "M": "POST", "T": "1.6149ms", "Q": "", "IP": "::1"}
+2022-06-18 23:30:45	INFO	web/log.go:35	/api/server/point	{"S": 200, "M": "POST", "T": "72.1823ms", "Q": "", "IP": "::1"}
+2022-06-18 23:31:06	INFO	web/log.go:35	/api/server/point	{"S": 200, "M": "PUT", "T": "109.5567ms", "Q": "", "IP": "::1"}
+2022-06-18 23:34:25	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 23:34:45	INFO	web/log.go:35	/api/server/point	{"S": 404, "M": "DELETE", "T": "0s", "Q": "", "IP": "::1"}
+2022-06-18 23:35:05	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 23:35:05	ERROR	rest/restRes.go:34	参数 id 为空	{"caller": "D:/goProject/careful/controller/server_point.go:115"}
+2022-06-18 23:35:05	INFO	web/log.go:35	/api/server/point	{"S": 200, "M": "DELETE", "T": "553.7µs", "Q": "", "IP": "::1"}
+2022-06-18 23:35:08	INFO	web/log.go:35	/api/server/point	{"S": 200, "M": "DELETE", "T": "11.1012ms", "Q": "", "IP": "::1"}
+2022-06-18 23:47:22	INFO	careful/main.go:31	server running on port: 9876
+2022-06-18 23:47:32	ERROR	rest/restRes.go:34	参数 folder_id 为空	{"caller": "D:/goProject/careful/controller/server_point.go:19"}
+2022-06-18 23:47:32	INFO	web/log.go:35	/api/server/point	{"S": 200, "M": "GET", "T": "1.0202ms", "Q": "", "IP": "::1"}
+2022-06-18 23:47:39	INFO	web/log.go:35	/api/server/point	{"S": 200, "M": "GET", "T": "2.1705ms", "Q": "folder_id=1", "IP": "::1"}

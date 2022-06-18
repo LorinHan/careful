@@ -82,7 +82,7 @@ func (f *folder) Delete(ctx *gin.Context) {
 	}
 
 	folderModel := &model.Folder{
-		ID:   req.ID,
+		ID: req.ID,
 	}
 	if err := folderModel.Delete(); err != nil {
 		rest.Error(ctx, err.Error())

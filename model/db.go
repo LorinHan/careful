@@ -29,4 +29,7 @@ func Init() {
 	if err := db.AutoMigrate(&Node{}); err != nil {
 		zap.L().Error(err.Error())
 	}
+	if err := db.AutoMigrate(&ServerPoint{}); err != nil {
+		zap.L().Error(err.Error())
+	}
 }
