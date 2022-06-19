@@ -1,12 +1,15 @@
 package controller
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
+	"net/http"
 )
 
 func InitRouter(r *gin.Engine) {
 	appMode := viper.GetString("App.Mode")
+	r.Use(Cors())
 	api := r.Group("/api")
 	{
 		// 服务管理
@@ -59,6 +62,23 @@ func InitRouter(r *gin.Engine) {
 			docker.GET("logs", Docker.Logs)
 			docker.GET("info", Docker.Info)
 			docker.POST("run", Docker.Run)
+		}
+	}
+}
+
+func Cors() gin.HandlerFunc {
+	return func(context *gin.Context) {
+		method := context.Request.Method
+
+		context.Header("Access-Control-Allow-Origin", "*")
+		context.Header("Access-Control-Allow-Headers", "*")
+		context.Header("Access-Control-Allow-Methods", "*")
+		context.Header("Access-Control-Expose-Headers", "*")
+		context.Header("Access-Control-Allow-Credentials", "true")
+
+		fmt.Println(method == "OPTIONS")
+		if method == "OPTIONS" {
+			context.AbortWithStatus(http.StatusNoContent)
 		}
 	}
 }
