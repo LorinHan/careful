@@ -359,6 +359,11 @@ func (d *docker) Run(ctx *gin.Context) {
 		return
 	}
 
+	if _, err := exec.Command("chmod", "755", req.Path).Output(); err != nil {
+		rest.Error(ctx, err.Error())
+		return
+	}
+
 	var (
 		cmd = exec.Command("sh", "-c", req.Path)
 	)

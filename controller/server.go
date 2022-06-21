@@ -7,6 +7,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/zenfire-cn/commkit/utility"
 	"github.com/zenfire-cn/webkit/rest"
+	"io/ioutil"
 	"os"
 	"path"
 	"path/filepath"
@@ -15,6 +16,77 @@ import (
 var Server = &server{}
 
 type server struct {
+}
+
+func (s *server) ConfRead(ctx *gin.Context) {
+	var (
+		req params.DockerRunReq
+	)
+
+	p := ctx.Query("path")
+	req.Path = p
+	if err := req.Check(); err != nil {
+		rest.Error(ctx, err.Error())
+		return
+	}
+
+	if !utility.PathFileExists(req.Path) {
+		rest.Error(ctx, "配置文件不存在")
+		return
+	}
+
+	f, err := os.Open(req.Path)
+	if err != nil {
+		rest.Error(ctx, err.Error())
+		return
+	}
+	defer f.Close()
+
+	// 读取文件全部内容
+	b, err := ioutil.ReadAll(f)
+	if err != nil {
+		rest.Error(ctx, err.Error())
+		return
+	}
+
+	rest.Success(ctx, string(b))
+}
+
+func (s *server) ConfWrite(ctx *gin.Context) {
+	var (
+		req params.ConfWriteReq
+	)
+
+	if err := ctx.Bind(&req); err != nil {
+		rest.Error(ctx, err.Error())
+		return
+	}
+
+	if !utility.PathFileExists(req.Path) {
+		rest.Error(ctx, "配置文件不存在")
+		return
+	}
+
+	f, err := os.OpenFile(req.Path, os.O_WRONLY|os.O_TRUNC|os.O_CREATE, 0644)
+	if err != nil {
+		rest.Error(ctx, err.Error())
+		return
+	}
+	// offset
+	// os.Truncate(filename, 0) //clear
+	// n, err := f.Seek(0, os.SEEK_END)
+	// if err != nil {
+	// 	rest.Error(ctx, err.Error())
+	// 	return
+	// }
+	_, err = f.WriteString(req.Content)
+	if err != nil {
+		rest.Error(ctx, err.Error())
+		return
+	}
+	defer f.Close()
+
+	rest.Success(ctx, nil)
 }
 
 func (s *server) Upload(ctx *gin.Context) {

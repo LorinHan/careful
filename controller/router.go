@@ -15,6 +15,8 @@ func InitRouter(r *gin.Engine) {
 		server := api.Group("/server")
 		{
 			server.POST("/upload", Server.Upload)
+			server.GET("/conf", Server.ConfRead)
+			server.PUT("/conf", Server.ConfWrite)
 
 			if appMode == "main" {
 				server.POST("", Server.Create)

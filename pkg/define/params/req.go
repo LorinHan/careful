@@ -198,3 +198,18 @@ func (sp *ServerPointUpdateReq) Check() error {
 	}
 	return nil
 }
+
+type ConfWriteReq struct {
+	Path     string `json:"path"`
+	Content string   `json:"content"`
+}
+
+func (c *ConfWriteReq) Check() error {
+	if c.Path == "" {
+		return errors.New("参数 path 为空")
+	}
+	if c.Content == "" {
+		return errors.New("参数 content 为空")
+	}
+	return nil
+}
