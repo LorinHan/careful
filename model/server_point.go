@@ -1,20 +1,20 @@
 package model
 
 import (
+	"careful/pkg/utils"
 	"github.com/zenfire-cn/commkit/database"
-	"time"
 )
 
 type ServerPoint struct {
-	ID            uint      `gorm:"primaryKey" json:"id"`
-	Name          string    `gorm:"not null;default:'';comment:服务节点名称;" json:"name"`
-	ContainerName string    `gorm:"not null;default:'';comment:容器名称;" json:"container_name"`
-	ServerID      uint      `gorm:"not null;comment:所属服务;" json:"server_id"`
-	NodeID        uint      `gorm:"not null;comment:所属服务器节点;" json:"node_id"`
-	ShPath        string    `gorm:"not null;default:'';comment:脚本存放路径;" json:"sh_path"`
-	ConfPath      string    `gorm:"not null;default:'';comment:配置文件存放路径;" json:"conf_path"`
-	CreatedAt     time.Time `json:"created_at,omitempty"`
-	UpdatedAt     time.Time `json:"updated_at,omitempty"`
+	ID            uint       `gorm:"primaryKey" json:"id"`
+	Name          string     `gorm:"not null;default:'';comment:服务节点名称;" json:"name"`
+	ContainerName string     `gorm:"not null;default:'';comment:容器名称;" json:"container_name"`
+	ServerID      uint       `gorm:"not null;comment:所属服务;" json:"server_id"`
+	NodeID        uint       `gorm:"not null;comment:所属服务器节点;" json:"node_id"`
+	ShPath        string     `gorm:"not null;default:'';comment:脚本存放路径;" json:"sh_path"`
+	ConfPath      string     `gorm:"not null;default:'';comment:配置文件存放路径;" json:"conf_path"`
+	CreatedAt     utils.Time `json:"created_at,omitempty"`
+	UpdatedAt     utils.Time `json:"updated_at,omitempty"`
 }
 
 func (sp *ServerPoint) Create() error {

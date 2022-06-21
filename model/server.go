@@ -1,17 +1,17 @@
 package model
 
 import (
+	"careful/pkg/utils"
 	"github.com/zenfire-cn/commkit/database"
 	"gorm.io/gorm"
-	"time"
 )
 
 type Server struct {
-	ID        uint      `gorm:"primaryKey" json:"id"`
-	Name      string    `gorm:"not null;default:'';comment:服务名称;" json:"name"`
-	FolderID  uint      `gorm:"not null;default:0;comment:所属文件夹;" json:"id"`
-	CreatedAt time.Time `json:"created_at"`
-	UpdatedAt time.Time `json:"updated_at"`
+	ID        uint       `gorm:"primaryKey" json:"id"`
+	Name      string     `gorm:"not null;default:'';comment:服务名称;" json:"name"`
+	FolderID  uint       `gorm:"not null;default:0;comment:所属文件夹;" json:"folder_id"`
+	CreatedAt utils.Time `json:"created_at"`
+	UpdatedAt utils.Time `json:"updated_at"`
 }
 
 func (s *Server) Create() error {

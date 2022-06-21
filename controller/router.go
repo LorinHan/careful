@@ -1,7 +1,6 @@
 package controller
 
 import (
-	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
 	"net/http"
@@ -71,12 +70,11 @@ func Cors() gin.HandlerFunc {
 		method := context.Request.Method
 
 		context.Header("Access-Control-Allow-Origin", "*")
-		context.Header("Access-Control-Allow-Headers", "*")
+		context.Header("Access-Control-Allow-Headers", "Origin, X-Requested-With, content-Type, Accept, Authorization")
 		context.Header("Access-Control-Allow-Methods", "*")
 		context.Header("Access-Control-Expose-Headers", "*")
 		context.Header("Access-Control-Allow-Credentials", "true")
 
-		fmt.Println(method == "OPTIONS")
 		if method == "OPTIONS" {
 			context.AbortWithStatus(http.StatusNoContent)
 		}
