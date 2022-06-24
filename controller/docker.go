@@ -25,7 +25,7 @@ type docker struct {
 func (d *docker) List(ctx *gin.Context) {
 	var (
 		req = &params.DockerListReq{
-			Name: ctx.QueryArray("name"),
+			Name: ctx.QueryArray("name[]"),
 		}
 		dockerListArgs []filters.KeyValuePair
 		resp           []params.DockerListResp

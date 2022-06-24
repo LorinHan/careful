@@ -32,9 +32,9 @@ func (sp *ServerPoint) Delete() error {
 func (sp *ServerPoint) List(folderID uint) ([]map[string]interface{}, error) {
 	var list []map[string]interface{}
 	if err := database.GetDB().Raw(`
-		SELECT sp.*, n.name AS node_name, s.name AS server_name
-		FROM server_points AS sp, nodes AS n, servers AS s
-		WHERE sp.node_id = n.id AND sp.server_id = s.id AND s.folder_id = ?;`, folderID).
+		SELECT sp.*, s.id as server_id, n.name AS node_name, s.name AS server_name, n.ip
+		FROM servers AS s left join server_points AS sp on sp.server_id = s.id left join nodes AS n on sp.node_id = n.id
+		WHERE s.folder_id = ?;`, folderID).
 		Find(&list).Error; err != nil {
 		return nil, err
 	}

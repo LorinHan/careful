@@ -18,7 +18,7 @@ var Server = &server{}
 type server struct {
 }
 
-func (s *server) ConfRead(ctx *gin.Context) {
+func (s *server) FileRead(ctx *gin.Context) {
 	var (
 		req params.DockerRunReq
 	)
@@ -31,7 +31,7 @@ func (s *server) ConfRead(ctx *gin.Context) {
 	}
 
 	if !utility.PathFileExists(req.Path) {
-		rest.Error(ctx, "配置文件不存在")
+		rest.Error(ctx, "文件不存在")
 		return
 	}
 
@@ -52,7 +52,7 @@ func (s *server) ConfRead(ctx *gin.Context) {
 	rest.Success(ctx, string(b))
 }
 
-func (s *server) ConfWrite(ctx *gin.Context) {
+func (s *server) FileWrite(ctx *gin.Context) {
 	var (
 		req params.ConfWriteReq
 	)
@@ -63,7 +63,7 @@ func (s *server) ConfWrite(ctx *gin.Context) {
 	}
 
 	if !utility.PathFileExists(req.Path) {
-		rest.Error(ctx, "配置文件不存在")
+		rest.Error(ctx, "文件不存在")
 		return
 	}
 

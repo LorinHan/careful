@@ -9,14 +9,14 @@ import (
 func InitRouter(r *gin.Engine) {
 	appMode := viper.GetString("App.Mode")
 	r.Use(Cors())
-	api := r.Group("/api")
+	api := r.Group("/careful/api")
 	{
 		// 服务管理
 		server := api.Group("/server")
 		{
 			server.POST("/upload", Server.Upload)
-			server.GET("/conf", Server.ConfRead)
-			server.PUT("/conf", Server.ConfWrite)
+			server.GET("/file", Server.FileRead)
+			server.PUT("/file", Server.FileWrite)
 
 			if appMode == "main" {
 				server.POST("", Server.Create)
